@@ -7,7 +7,7 @@ body {
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
+  background-color: #8190e9;
   color: #212121;
   line-height: 1.5;
 }
@@ -15,4 +15,91 @@ body {
 img {
   display: block;
   max-width: 100%;
+}
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  color: #fff;
+  background: linear-gradient(45deg, #ff6b6b, #c44569);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.field {
+  text-align: center;
+}
+
+.value {
+  display: inline-block;
+  width: 60px;
+}
+
+.label {
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+.datetimer{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+margin: 10px;}
+/* конопка старт */
+
+.datetimer input[type="text"],
+.datetimer button[data-start] {
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  color: #e6fa0a;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+/* promis */
+/* Стилі для форми */
+.form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.form input[type="number"],
+.form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.form button {
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
 }
